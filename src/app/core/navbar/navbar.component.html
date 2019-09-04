@@ -1,0 +1,20 @@
+<nav class="navbar">
+
+  <div class="container">
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <a href="javascript:;" class="navbar-toggle"><i class="pi pi-bars"
+          (click)="exibindoMenu = !exibindoMenu"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <ul class="navbar-menu" [hidden]="!exibindoMenu">
+    <li class="navbar-usuario">Mayron Souza</li>
+    <li class="navbar-menuitem"><a href="#">Lançamentos</a></li>
+    <li class="navbar-menuitem"><a href="#">Pessoas</a></li>
+    <li class="navbar-menuitem"><a href="#">Logout</a></li>
+  </ul>
+
+</nav>
