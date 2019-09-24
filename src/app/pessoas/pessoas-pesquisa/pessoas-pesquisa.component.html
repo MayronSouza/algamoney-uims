@@ -34,7 +34,7 @@
             <td>{{pessoa.endereco.estado}}</td>
             <td>
               <a href="javascript:;" [pTooltip]="pessoa.ativo ? 'Desativar' : 'Ativar'"
-                  tooltipPosition="top" (click)="altenarStatus(pessoa)">
+                  tooltipPosition="top" (click)="alternarStatus(pessoa)">
                 {{ pessoa.ativo ? 'Ativo' : 'Inativo' }}
               </a>
             </td>

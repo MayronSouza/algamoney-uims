@@ -61,7 +61,7 @@ export class PessoasPesquisaComponent implements OnInit {
   alternarStatus(pessoa: any): void {
     const novoStatus = !pessoa.ativo;
 
-    this.pessoaService.mudarStatus(pessoa.codigo, novoStatus)
+    this.pessoaService.mudarStatus(pessoa.id, novoStatus)
       .then(() => {
         const acao = novoStatus ? 'ativada' : 'desativada';
 
